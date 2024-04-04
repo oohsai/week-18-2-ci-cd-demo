@@ -19,8 +19,7 @@ jobs:
         run: npm install
 
       -name: Run Prisma
-        run: cd db/packages && npx prsima generate &&
-        cd ../..
+        run: cd db/packages && npx prisma generate && cd ../..
 
       -name: Run Build
         run: npm run build
